@@ -1,20 +1,15 @@
-# FocusRush 
-
-لعبة أركيد قصيرة لتدريب الانتباه الانتقائي أثناء المذاكرة. مبنية بـ HTML وCSS وJavaScript فقط.
-
-## التشغيل
-افتح `index.html` في المتصفح مباشرة. لا تحتاج أي مكتبات.
-
-## القواعد
-- مدة الجولة 60 ثانية.
-- اضغط على الهدف المطلوب فقط وتجاهل البقية.
-- صحيح: +10 | 5 متتالية: +25 إضافية | مشتت: -5 | التجاهل: بلا خصم.
-- المستوى 1: مشتتات قليلة. المستوى 2: أشكال أكثر وسرعة أعلى. المستوى 3: يتغير الهدف أثناء الجولة.
-
-## النتائج
-النقاط، الدقة، الأخطاء، ومتوسط زمن الاستجابة (من النقرات الصحيحة فقط). أفضل نتيجة تُحفظ في localStorage.
-
-## الملفات
-- `index.html` الصفحات
-- `style.css` التصميم
-- `script.js` منطق اللعبة
+FocusRush
+A short arcade game for training selective attention while studying. Built with plain HTML, CSS, and JavaScript.
+Running the Game
+Open index.html directly in your browser. No libraries required.
+Rules
+Each round lasts 60 seconds.
+Click only the target shape and ignore everything else.
+Correct click: +10 | 5 in a row: +25 bonus | Distractor click: -5 | Ignoring a shape: no penalty.
+Level 1: few distractors. Level 2: more shapes and higher speed. Level 3: the target changes during the round.
+Results
+Score, accuracy, mistakes, and average response time (calculated from correct clicks only). Your best score is saved in localStorage.
+Files
+index.html: page structure
+style.css: styling
+script.js: game logic
