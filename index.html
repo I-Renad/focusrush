@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FocusRush — ركّز واجمع النقاط</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <button id="mute" aria-label="الصوت">🔊</button>
+  <section id="start" class="screen on">
+    <h1>FocusRush</h1>
+    <p>لعبة تدريب على الانتباه الانتقائي</p>
+    <div class="legend">
+      <span class="sh circle blue"></span><span class="sh yellow"></span><span class="sh triangle red"></span>
+    </div>
+    <p>لديك 60 ثانية. اضغط على الهدف المطلوب فقط وتجاهل البقية.<br>صحيح +10 · 5 متتالية +25 · خطأ −5 · التجاهل بلا خصم</p>
+    <p id="bestStart"></p>
+    <button class="btn" id="startBtn">ابدأ اللعب</button>
+  </section>
+
+  <section id="game" class="screen">
+    <div id="hud">
+      <div class="hud"><b id="score">0</b><span>النقاط</span></div>
+      <div class="hud"><b id="time">60</b><span>الوقت</span></div>
+      <div class="hud"><b id="level">1</b><span>المستوى</span></div>
+    </div>
+    <div id="goal"></div>
+    <div id="bar"><i id="barFill"></i></div>
+    <div id="arena"></div>
+  </section>
+
+  <section id="end" class="screen">
+    <h1 style="font-size:2rem">انتهى الوقت</h1>
+    <div id="newbest"></div>
+    <div class="stats">
+      <div class="hud"><b id="rScore">0</b><span>النقاط</span></div>
+      <div class="hud"><b id="rBest">0</b><span>أفضل نتيجة</span></div>
+      <div class="hud"><b id="rAcc">—</b><span>الدقة</span></div>
+      <div class="hud"><b id="rWrong">0</b><span>الأخطاء</span></div>
+      <div class="hud" style="grid-column:span 2"><b id="rRt">—</b><span>متوسط زمن الاستجابة</span></div>
+    </div>
+    <button class="btn" id="againBtn">إعادة اللعب</button>
+    <button class="btn alt" id="menuBtn">القائمة الرئيسية</button>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
